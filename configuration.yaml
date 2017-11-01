@@ -1,0 +1,104 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home 
+  # Location required to calculate the time the sun rises and sets
+  latitude: !secret latitude
+  longitude: !secret longitude
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 12
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Europe/London
+  customize: !include customize.yaml
+
+# INCLUDE FILES
+sensor: !include sensors.yaml
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+light: !include hue.yaml
+switch: !include switches.yaml
+# device_tracker: !include device-tracker.yaml
+notify: !include notifications.yaml
+scene: !include_dir_list scenes
+
+emulated_hue:
+  exposed_domains:
+    - light
+    - script
+    - switch
+
+device_tracker:
+  - platform: bluetooth_tracker
+
+# Show links to resources in log and frontend
+#introduction:
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+logger:
+#  default: info
+#  logs:
+#    homeassistant.components.python_scripts: debug
+
+python_script:
+
+http:
+   api_password: !secret api_password
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+
+# Media Players
+media_player: !include media_players.yaml
+
+# Track the sun
+sun:
+
+# Text to speech
+tts:
+  - platform: google
+  
+# Enables IFTTT for webhooks and android notifications triggered by events  
+ifttt:
+  key: !secret ifttt_key  
+  
+google:
+  client_id: !secret google_key
+  client_secret: google_secret
+  
+
+input_boolean: !include boolean-switches.yaml
+
+binary_sensor:
+  - platform: workday
+    country: UK
+
+
+alexa:
+
+intent_script: !include_dir_merge_named alexa/intents
+

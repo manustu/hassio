@@ -1,0 +1,377 @@
+automation._development:
+  hidden: false
+  emulated_hue: false
+automation.connor_home:
+  hidden: true
+  emulated_hue: false
+automation.connor_leave_house:
+  hidden: true
+  emulated_hue: false
+automation.dim_lights_with_kodi:
+  hidden: true
+  emulated_hue: false
+automation.hallway_light_on:
+  hidden: true
+  emulated_hue: false
+automation.kelly_home:
+  hidden: true
+  emulated_hue: false
+automation.kodi_welcome_message:
+  hidden: true
+  emulated_hue: false
+automation.lamp_with_lights:
+  hidden: true
+  emulated_hue: false
+automation.me_home:
+  hidden: true
+  emulated_hue: false
+automation.new_automation:
+  hidden: true
+  emulated_hue: false
+automation.porch_light_off:
+  hidden: true
+  emulated_hue: false
+automation.porch_light_on:
+  hidden: true
+  emulated_hue: false
+automation.porch_on_at_sunset:
+  hidden: true
+  emulated_hue: false
+automation.restore_lights_when_kodi_stopped:
+  hidden: true
+  emulated_hue: false
+automation.restore_lights_with_kodi_pause:
+  hidden: true
+  emulated_hue: false
+automation.set_theme_at_startup:
+  hidden: true
+  emulated_hue: false
+automation.sunset:
+  hidden: true
+  emulated_hue: false
+device_tracker.connor:
+  hidden: false
+  friendly_name: Connor
+  emulated_hue: false
+device_tracker.kelly:
+  hidden: false
+  friendly_name: Kelly
+  emulated_hue: false
+device_tracker.peugeot:
+  hidden: false
+  emulated_hue: false
+device_tracker.samsung_galaxy_s7:
+  hidden: false
+  friendly_name: Turkey
+  emulated_hue: false
+device_tracker.samsung_galaxy_s7_edge:
+  hidden: false
+  friendly_name: Stuart
+  emulated_hue: false
+device_tracker.tahlia:
+  hidden: false
+  friendly_name: Quail
+  emulated_hue: false
+group.all_automations:
+  hidden: true
+  emulated_hue: false
+group.all_devices:
+  hidden: true
+  emulated_hue: false
+group.all_lights:
+  hidden: false
+  emulated_hue: false
+group.all_scripts:
+  hidden: true
+  emulated_hue: false
+group.all_switches:
+  hidden: true
+  emulated_hue: false
+group.living_room:
+  hidden: false
+  emulated_hue: false
+input_boolean.bedtime:
+  hidden: false
+  emulated_hue: false
+input_boolean.hallway_light:
+  hidden: false
+  emulated_hue: false
+input_boolean.landing_light:
+  hidden: false
+  emulated_hue: false
+input_boolean.porch_light:
+  hidden: false
+  emulated_hue: false
+light.all_hue_lights:
+  hidden: false
+  emulated_hue: false
+light.bedroom:
+  hidden: false
+  friendly_name: Bedroom
+  emulated_hue: false
+light.custom_group_for_group:
+  hidden: true
+  emulated_hue: false
+light.custom_group_for_group2:
+  hidden: true
+  emulated_hue: false
+light.custom_group_for_lights:
+  hidden: true
+  emulated_hue: false
+light.custom_group_for_lights_2:
+  hidden: true
+  emulated_hue: false
+light.dining_area:
+  hidden: false
+  friendly_name: Dining Area
+  emulated_hue: false
+light.lightstrip:
+  hidden: false
+  friendly_name: TV Lightstrip
+  emulated_hue: false
+light.living_room:
+  hidden: false
+  friendly_name: All Living Room Hue Lights
+  emulated_hue: false
+light.lounge_area:
+  hidden: false
+  friendly_name: Lounge Area
+  emulated_hue: false
+light.master_bedroom:
+  hidden: false
+  friendly_name: Bedroom
+  emulated_hue: false
+light.quickhue_switch_lights:
+  hidden: true
+  emulated_hue: false
+light.quickhue_switch_lights_2:
+  hidden: true
+  emulated_hue: false
+light.toilet:
+  hidden: false
+  friendly_name: Toilet
+  emulated_hue: false
+light.toilet_2:
+  hidden: false
+  emulated_hue: false
+media_player.kodi_media_center:
+  hidden: false
+  friendly_name: Kodi
+  emulated_hue: false
+scene.living_room_off:
+  hidden: false
+  emulated_hue: false
+scene.media_paused:
+  hidden: true
+  friendly_name: Kodi Paused
+  emulated_hue: false
+scene.media_playing:
+  hidden: true
+  friendly_name: Kodi Playing
+  emulated_hue: true
+  emulated_hue_name: Movie time
+scene.media_stopped:
+  hidden: true
+  friendly_name: Kodi Stopped
+  emulated_hue: false
+scene.steves_here:
+  hidden: true
+  friendly_name: Steve's Here
+  emulated_hue: true
+  emulated_hue_name: steves here
+script.bedtime_timer:
+  hidden: false
+  emulated_hue: false
+script.timer_hallway_off:
+  hidden: false
+  emulated_hue: false
+script.timer_landing_off:
+  hidden: false
+  emulated_hue: false
+sensor.average_load_15m:
+  hidden: false
+  friendly_name: 15m Load
+  emulated_hue: false
+sensor.average_load_1m:
+  hidden: false
+  friendly_name: 1m Load
+  emulated_hue: false
+sensor.average_load_5m:
+  hidden: false
+  friendly_name: 5m Load
+  emulated_hue: false
+sensor.bathroom_lux:
+  hidden: false
+  friendly_name: Light Level
+  emulated_hue: false
+sensor.bathroom_motion:
+  hidden: false
+  emulated_hue: false
+sensor.bathroom_temperature:
+  hidden: false
+  friendly_name: Indoor Temp
+  emulated_hue: false
+sensor.cpu_use:
+  hidden: false
+  friendly_name: CPU
+  emulated_hue: false
+sensor.dark_sky_temperature:
+  hidden: false
+  friendly_name: Outside Temp
+sensor.disk_free_home:
+  hidden: false
+  friendly_name: Free Space
+  emulated_hue: false
+sensor.disk_use_home:
+  hidden: false
+  friendly_name: Space Used
+  emulated_hue: false
+sensor.ipv4_address_eth0:
+  hidden: false
+  friendly_name: IPv4 Address
+  emulated_hue: false
+sensor.last_boot:
+  hidden: false
+  friendly_name: Last Boot
+  emulated_hue: false
+sensor.packets_received_eth0:
+  hidden: false
+  friendly_name: Packets Received
+  emulated_hue: false
+sensor.packets_sent_eth0:
+  hidden: false
+  friendly_name: Packets Sent
+  emulated_hue: false
+sensor.ram_free:
+  hidden: false
+  friendly_name: RAM Free
+  emulated_hue: false
+sensor.ram_free_2:
+  hidden: false
+  friendly_name: RAM Free
+  emulated_hue: false
+sensor.ram_use:
+  hidden: false
+  friendly_name: RAM Used
+  emulated_hue: false
+sensor.received_eth0:
+  hidden: false
+  friendly_name: Data Received
+  emulated_hue: false
+sensor.sent_eth0:
+  hidden: false
+  friendly_name: Data Sent
+  emulated_hue: false
+sensor.since_last_boot:
+  hidden: false
+  friendly_name: Time since Last Boot
+  emulated_hue: false
+sensor.speedtest_download:
+  hidden: false
+  friendly_name: Speedtest DL
+  emulated_hue: false
+sensor.speedtest_ping:
+  hidden: false
+  friendly_name: Speedtest PING
+  emulated_hue: false
+sensor.speedtest_upload:
+  hidden: false
+  friendly_name: Speedtest UL
+  emulated_hue: false
+sensor.swap_free:
+  hidden: false
+  emulated_hue: false
+sensor.swap_use:
+  hidden: false
+  emulated_hue: false
+sensor.swap_use_2:
+  hidden: false
+  emulated_hue: false
+sensor.yr_symbol:
+  hidden: false
+  friendly_name: Weather
+  emulated_hue: false
+sun.sun:
+  hidden: false
+  friendly_name: Sunset
+  emulated_hue: false
+switch.broadlink_tc2_multi_toggle:
+  hidden: true
+  emulated_hue: false
+switch.computer_lamp:
+  hidden: false
+  friendly_name: Computer Lamp
+  emulated_hue: true
+  emulated_hue_name: Computer Lamp
+  assumed_state: false
+  icon: mdi:lamp
+switch.front_porch_light:
+  hidden: false
+  friendly_name: Porch Light
+  emulated_hue: true
+  emulated_hue_name: Porch
+  icon: mdi:lightbulb
+  assumed_state: false
+switch.hallway_light:
+  hidden: false
+  friendly_name: Hallway Light
+  emulated_hue: true
+  emulated_hue_name: Hallway
+  icon: mdi:lightbulb
+  assumed_state: false
+switch.landing_light:
+  hidden: false
+  friendly_name: Landing Light
+  emulated_hue: true
+  emulated_hue_name: Landing
+  icon: mdi:lightbulb
+  assumed_state: false
+switch.living_room_fire:
+  hidden: false
+  friendly_name: Living Room Fire
+  emulated_hue: true
+  emulated_hue_name: Fire
+  icon: mdi:fire
+  assumed_state: false
+switch.living_room_tv:
+  hidden: false
+  friendly_name: TV
+  emulated_hue: true
+  emulated_hue_name: TV
+  assumed_state: false
+  icon: mdi:television-classic
+switch.plug_1:
+  hidden: false
+  friendly_name: Unused Plug 1
+  emulated_hue: false
+  icon: mdi:power-socket-uk
+  assumed_state: false
+switch.plug_4:
+  hidden: false
+  friendly_name: Unused Plug 4
+  emulated_hue: false
+  icon: mdi:power-socket-uk
+  assumed_state: false
+switch.plug_5:
+  hidden: false
+  friendly_name: Unused Plug 5
+  emulated_hue: false
+  icon: mdi:power-socket-uk
+  assumed_state: false
+zone.home:
+  hidden: false
+  emulated_hue: false
+switch.oil_burner:
+  icon: mdi:flower
+  assumed_state: false
+switch.leo:
+  icon: mdi:snowman
+  assumed_state: false
+switch.fireplace:
+  hidden: false
+  friendly_name: Fireplace Glow Light
+  emulated_hue: true
+  emulated_hue_name: Fireplace Light
+  icon: mdi:radiator
+  assumed_state: false
+

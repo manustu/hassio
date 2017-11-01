@@ -1,0 +1,12 @@
+- platform: ping
+  hosts:
+    Kelly: 192.168.0.15
+    Connor: 192.168.0.50
+    Tahlia: 192.168.0.21
+#- platform: nmap_tracker
+#  hosts: 192.168.0.1/24
+#  home_interval: 10
+
+- platform: bluetooth_tracker
+
+- platform: owntracks_http

@@ -1,0 +1,11 @@
+- platform: kodi
+  name: Kodi Media Center
+  host: 192.168.0.41
+  port: !secret kodi_port
+  username: kodi
+  password: mutdrule
+- platform: firetv
+  host: 192.168.0.41
+  port: 5556
+  device: Fire_TV
+  name: Fire TV

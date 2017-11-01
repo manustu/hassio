@@ -1,0 +1,10 @@
+default_bedroom:
+  name: Default State - Bedroom Light
+  initial: on
+override_patch:
+  name: Override Patch for Default Bedroom
+stella_detector:
+  name: The Stella Minge Detector
+  initial: off
+ice_detector:
+  name: Frozen Windscreens?

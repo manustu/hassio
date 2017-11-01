@@ -1,0 +1,67 @@
+- platform: broadlink
+  host: 192.168.0.25
+  mac: !secret broadlink_mac
+  switches:
+    landing_light:
+      friendly_name: "Landing Light"
+      command_on: '6RRGAN8JFgkJFgkWCRYWCRYJFgkJFgkWCRYWCRYJCRYWCRYJFgkJFhYJCRYWCQkWFgkWCRYJFgkWCRYJCRYJFgkWFgkJFgkAAUg='
+      command_off: '6RRGAN8JCRYJFgkWCRYJFgkWCRYJFhYJCRYWCQkWCRYJFhYJCRYWCQkWCRYWCQkWCRYWCRYJCRYWCRYJFgkJFgkWCRYJFgkAAUg='
+    hallway_light:
+      friendly_name: "Hallway Light"
+      command_on: '6RRGAN8JCRYJFgkWFgkJFhYJCRYWCRYJFgkJFgkWCRYJFgkWFgkJFgkWFgkJFhYJFgkJFgkWFgkWCRYJFgkWCQkWFgkJFgkAAUg='
+      command_off: '6RRGAN8JFgkJFhYJCRYWCRYJCRYWCRYJFgkJFhYJFgkWCQkWFgkJFgkWCRYJFgkWFgkJFgkWCRYJFgkWCRYWCQkWCRYWCQkAAUg='
+    porch_light:
+      friendly_name: "Porch Light"
+      command_on: '6RRGAN8JFgkWCQkWFgkWCRYJCRYJFhYJFgkJFhYJFgkWCQkWFgkJFhYJFgkWCRYJCRYJFhYJCRYJFhYJCRYWCQkWCRYWCQkAAUg='
+      command_off: '6RRGAN8JCRYJFhYJFgkJFhYJFgkJFhYJFgkWCRYJCRYJFhYJCRYWCQkWCRYJFhYJFgkJFgkWCRYJFhYJFgkJFhYJFgkWCQkAAUg='
+    multi_one:
+      friendly_name: "Broadlink TC2 Multi Toggle"
+      command_on: '6RRGAN8JCRYJFgkWFgkWCQkWCRYWCQkWCRYWCQkWFgkJFhYJCRYWCQkWFgkJFgkWCRYJFgkWFgkJFgkWCRYWCRYJFgkWCQkAAUg='
+      command_off: '6RRGAN8JCRYWCQkWFgkJFgkWFgkJFhYJFgkWCQkWCRYJFhYJCRYJFgkWFgkWCQkWFgkWCQkWFgkJFhYJFgkWCRYJFgkWCQkAAUg='
+    plug1:
+      friendly_name: "Computer Lamp"
+      command_on: 'sgsyAAYSEgcGExIHBhIHEgcSEgcHEgcSBhISBwcSEgcGExIHBhIHExIHEgcHEgYTEgcSBwa4AAAAAAAA'
+      command_off: 'shwyAAcSEgcGExIHBhMGEwYTEgcGEwYTBhMSBwYTEgcGEhIHBxMGExMHEgcSBxIHBhMGEga4AAAAAAAA'
+    plug2:
+      friendly_name: "Oil Burner"
+      command_on: 'sjUyAAYTEgcGExIHBhMGEgYTEgcGEgYSBhMSBgcSEgcGExIHEgcSBwYSBxIGEwcSEgcSBwa3AAAAAAAA'
+      command_off: 'shkyAAYSEgcGExIHBhMGEgYTEgcGEgYTBhMSBwYSEgcGEhIHEgcSBwYTBhMSBxIHBhIGEwa3AAAAAAAA'
+    plug3:
+      friendly_name: "Living Room Fire"
+      command_on: 'sgwyAAYTEgcGExIHBhMGEgcSEgcGEwYTBhMSBwYSEgcSBxIHBhMGEgYSBhMGEgcSEgcSBwa3AAAAAAAA'
+      command_off: 'sg0yAAYTEgcGEhIHBhMGEgYTEgYGEgYSBhMSBwYSEgcSBxIHBhIGEgYSBhMSBxIHBhIGEga3AAAAAAAA'
+    plug4:
+      friendly_name: "Leo"
+      command_on: 'shgyAAcSEwYHEhMGBxIHEgcSEwYHEgcSBxITBhMGEwYHEhMGBxIHEgcSBxIHEgcREwYTBge3AAAAAAAA'
+      command_off: 'sgoyAAYTEgYHExIHBhIGEwYSEgcGEgYTBhISBxIGEgcGExIHBhMGEgYSBhISBxIHBhMGEge3AAAAAAAA'
+    plug5:
+      friendly_name: "Fireplace"
+      command_on: 'shsyAAYTEgcGEhIHBhIHEgYSEgcGEgYSEgcSBwYSEgcGExIGBxIGEgYTBhIGEgcSEgcSBga3AAAAAAAA'
+      command_off: 'sgwyAAYSEgcGExIHBhMGEwcSEgcGEgYTEgcSBwYTEgcGExIHBhMGEwYSBhISBxIGBhIGEga3AAAAAAAA'
+    panasonic_tv:
+      friendly_name: "Living Room TV"
+      command_on: 'JgDKAnM4EA0QKRAMEA0PDg8NDw4PDg8NDw4PDQ8ODw4PKg8NEA0PDg8NDw4PDRANDw4PDQ8qEA0PDg8NDw4PDg8NDw4PDQ8ODw4PDQ8ODyoPDg8NDw4PDRANDw4PDQ8qEA0PDg8qDwAJkXM4Dw4PKg8NEA0PDg8NDw4PDRANDw4PDQ8ODw0QKg8NDw4PDg8NDw4PDQ8ODw4PDQ8qEA0PDg8NDw4PDRANDw4PDQ8ODw0QDQ8ODyoPDg8NDw4PDQ8ODw4PDQ8qEA0PDg8qDwAJkXM4Dw4PKg8NEA0PDg8NDw4PDRANDw4PDQ8ODw0QKg8NDw4PDRANDw4PDQ8ODw4PDQ8qDw4PDg8NDw4PDRANEA0PDQ8ODw0QDRANDyoPDRANDw4PDQ8ODw0QDQ8qEA0QDQ8qEAAJkHM4EAwQKhAMEA0PDg8NDw4QDBANEA0QDBANEAwQKhAMEA0PDRANEA0QDBANEAwQDRApEA0QDBEMEA0QDA8OEA0QDBANDw0PDhANDyoQDBANEA0QDBANEAwQDRApEA0QDBAqEAAJkHM4EAwQKhAMEA0PDRANEA0QDBANEAwRDBANEAwQKREMEA0QDBANEA0QDBANEAwQDRApEA0QDBANDw4QDBANEAwQDRANEAwQDRAMECoQDBANEA0QDBANEAwQDRApEA0QDBAqEAAJkHM4EAwQKREMEA0QDBANEA0QDA8OEAwQDRANEAwPKhEMEA0QDBANEAwRDBANDw0PDhApEA0QDA8OEA0QDBANEAwQDRANEAwQDRAMECoQDBANEAwQDRANEAwQDRApEA0QDBApEQAJkHM4EAwQKREMEA0QDBANEAwRDBANEAwQDRANEAwQKRANEA0QDBANEAwRDBANEAwQDRApEA0QDBANEAwRDBANEAwQDRANEAwQDRAMECkRDBANEAwQDRANEAwQDRApEA0QDBApEQANBQ8OEAwQDRANEAwPKhEM'
+      command_off: 'JgDMAHQ3EA0QKRANEAwQDRAMEQwQDRAMEA0QDBEMEA0QKRAMEQwQDRAMEQwQDRAMEA0QDBEoEQwQDRAMEQwQDRAMEA0QDBEpEAwRKBEpECkQKRANEAwRKBEMECkRKRApECkQDRApEAAJlXQ3EA0QKRANEAwQDRAMEQwQDRAMEA0QDBEMEA0QKRAMEQwQDRAMEQwQDRAMEA0QDBEpEAwQDRAMEQwQDRAMEA0QDBEpEAwRKBEpECkQKRANEAwRKRAMECkRKBEpECkQDRApEAANBQAAAAAAAAAAAAAAAA=='
+- platform: flux
+  lights:
+    - light.master_bedroom
+- platform: command_line
+  switches:
+    openvpn:
+      command_on: "ssh root@192.168.0.65 '/etc/init.d/openvpn stop'"
+      command_off: ssh root@192.168.0.65 '/etc/init.d/openvpn stop'
+    vpn_with_port:
+      command_on: ssh root@192.168.0.65:80 '/etc/init.d/openvpn stop'
+      command_off: "ssh root@192.168.0.65:80 '/etc/init.d/openvpn stop'" 
+    no_quotes:
+      command_on: "ssh root@192.168.0.65:22 /etc/init.d/openvpn stop"
+      command_off: ssh root@192.168.0.65:22 /etc/init.d/openvpn stop
+
+# - platform: telnet
+  # switches:
+    # opvn:
+      # resource: 192.168.0.65
+      # port: 22
+      # command_on: /etc/init.d/openvpn start
+      # command_off: '/etc/init.d/openvpn stop'
+

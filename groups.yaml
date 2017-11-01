@@ -1,0 +1,197 @@
+# default_view:
+  # view: yes
+  # icon: mdi:home
+  # entities:
+    # - device_tracker.stuart
+    # - device_tracker.connor
+    # - device_tracker.kelly
+    # - device_tracker.tahlia
+    # - sensor.dark_sky_temperature
+    # - sensor.bathroom_temperature
+    # - sensor.speedtest_download
+    # - group.downstairs_card
+    # - group.upstairs_card
+
+
+
+
+living_room:
+  name: "Living Room"
+  view: yes
+  icon: mdi:sofa
+  entities:
+    - light.living_room
+    - light.dining_area
+    - light.lounge_area    
+    - light.lightstrip
+    - switch.computer_lamp
+    - switch.fireplace
+    - switch.leo    
+    - switch.living_room_tv   
+    - switch.oil_burner    
+    - switch.living_room_fire    
+    - media_player.kodi_media_center
+    - scene.media_paused
+    - scene.media_playing
+    - scene.media_stopped
+
+living_room_card:
+  name: "Living Room"
+  view: no
+  icon: mdi:sofa
+  entities:
+    - light.living_room
+    - light.dining_area
+    - light.lounge_area    
+    - light.lightstrip
+    - switch.computer_lamp
+    - switch.fireplace
+    - switch.leo    
+    - switch.living_room_tv   
+    - switch.oil_burner    
+    - switch.living_room_fire    
+    - media_player.kodi_media_center
+    - scene.media_paused
+    - scene.media_playing
+    - scene.media_stopped
+
+bedroom:
+  name: "Bedroom"
+  view: yes
+  icon: mdi:hotel
+  entities:
+    - light.bedroom
+   
+
+downstairs:
+  name: "Downstairs"
+  view: yes
+  icon: mdi:arrow-down-thick
+  entities:
+    - automation.porch_on_at_sunset
+    - light.dining_area
+    - light.lightstrip
+    - light.living_room
+    - light.lounge_area
+    - media_player.kodi_media_center
+    - switch.broadlink_tc2_multi_toggle
+    - switch.computer_lamp
+    - switch.front_porch_light
+    - switch.hallway_light
+    - switch.living_room_fire
+    - switch.living_room_tv
+    - switch.oil_burner
+    - switch.leo
+    - switch.fireplace
+    
+downstairs_card:
+  name: "Downstairs"
+  view: no
+  icon: mdi:arrow-down-thick
+  entities:
+    - automation.porch_on_at_sunset
+    - light.dining_area
+    - light.lightstrip
+    - light.living_room
+    - light.lounge_area
+    # - media_player.kodi_media_center
+    - switch.broadlink_tc2_multi_toggle
+    - switch.computer_lamp
+    - switch.front_porch_light
+    - switch.hallway_light
+    - switch.living_room_fire
+    - switch.living_room_tv
+    - switch.oil_burner
+    - switch.leo
+    - switch.fireplace
+
+    
+downstairs_badges:
+  name: "Downstairs Badges"
+  view: no
+  entities:
+    - sensor.bathroom_lux
+
+upstairs:
+  name: "Upstairs"
+  view: yes
+  icon: mdi:arrow-up-thick
+  entities:
+    - light.bedroom
+    - light.toilet
+    - switch.landing_light
+    - sensor.bathroom_lux
+    - sensor.bathroom_temperature
+
+upstairs_card:
+  name: "Upstairs"
+  view: no
+  icon: mdi:arrow-up-thick
+  entities:
+    - light.bedroom
+    - light.toilet
+    - script.bedtime_timer
+    - script.timer_landing_off
+    - switch.landing_light
+    - sensor.bathroom_lux
+
+
+network_Card:
+  name: "System Status"
+  icon: mdi:access-point-network
+  entities:
+    - sensor.average_load_15m
+    - sensor.average_load_1m
+    - sensor.average_load_5m
+    - sensor.cpu_use
+    - sensor.disk_free_home
+    - sensor.disk_use_home
+    - sensor.ipv4_address_eth0
+    - sensor.last_boot
+    - sensor.packets_received_eth0
+    - sensor.packets_sent_eth0
+    - sensor.ram_free
+    - sensor.ram_free_2
+    - sensor.ram_use
+    - sensor.received_eth0
+    - sensor.sent_eth0
+    - sensor.since_last_boot
+    - sensor.speedtest_download
+    - sensor.speedtest_ping
+    - sensor.speedtest_upload
+    - sensor.swap_free
+    - sensor.swap_use
+    - sensor.swap_use_2
+
+
+    
+network_view:
+  name: "System Status"
+  view: yes
+  icon: mdi:access-point-network
+  entities:
+    # - sensor.speedtest_download
+    # - sensor.speedtest_upload    
+    # - sensor.speedtest_ping    
+    # - sensor.cpu_use
+    # - sensor.disk_free_home
+    # - sensor.disk_use_home
+    # - sensor.ram_free
+    # - sensor.ram_use
+    # - sensor.last_boot    
+    # - sensor.since_last_boot
+    - group.network_Card
+
+weather_card:
+  name: "Weather"
+  view: no
+  # icon:
+  entities:
+    - sensor.summary
+    - sensor.icon
+    - sensor.nearest_stor_distance
+    - sensor.temperature
+    - sensor.apparant_temperature
+    - sensor.wind_speed
+    - sensor.cloud_cover
+

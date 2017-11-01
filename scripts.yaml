@@ -1,0 +1,84 @@
+bedtime:
+  alias: Bedtime
+  sequence:
+  - data:
+      entity_id: input_boolean.override_patch
+    service: input_boolean.turn_on
+  - data:
+      entity_id: input_boolean.default_bedroom
+    service: input_boolean.turn_off
+  # - data:
+      # entity_id: light.dining_area, light.lounge_area, light.lightstrip
+    # service: light.turn_off
+  # - data:
+      # entity_id: switch.living_room_tv, switch.computer_lamp, switch.fireplace, switch.oil_burner,
+        # switch.living_room_fire, switch.leo
+    # service: switch.turn_off
+  # - data:
+      # entity_id: switch.porch_light
+    # service: switch.turn_off
+  # - data:
+      # entity_id: switch.hallway_light
+    # service: switch.turn_on
+  # - data:
+      # entity_id: script.timer_hallway_off
+    # service: script.turn_on
+  - data:
+      brightness: '251'
+      color_name: orange
+      entity_id: light.bedroom
+    service: light.turn_on
+  # - data:
+      # entity_id: switch.landing_light
+    # service: switch.turn_on
+  # - data:
+      # entity_id: script.timer_landing_off
+    # service: script.turn_on
+  - data:
+      entity_id: light.bedroom
+      transition: 1200
+    service: light.turn_off
+  - data:
+      entity_id: script.timer_bedroom_default
+    service: script.turn_on
+timer_hallway_off:
+  alias: Turn off hallway after 30 seconds
+  sequence:
+  - delay:
+      seconds: 30
+  - service: switch.turn_off
+    entity_id: switch.hallway_light
+timer_landing_off:
+  alias: Turn off landing after 2 minutes
+  sequence:
+  - delay:
+      seconds: 120
+  - service: switch.turn_off
+    entity_id: switch.landing_light
+    
+timer_bedroom_default:
+  alias: Disbale default bedroom light switch
+  sequence:
+  - delay:
+      seconds: 1200
+  - service: input_boolean.turn_off
+    entity_id: input_boolean.override_patch
+
+arrive_home_stu:
+  alias: Stuart Arrive Home
+  sequence:
+  - data:
+      entity_id: switch.hallway_light
+    service: switch.turn_on
+  - data:
+      entity_id: light.living_room
+    service: light.turn_on
+  - data:
+      entity_id: script.timer_hallway_off
+    service: script.turn_on
+tv_script:
+  alias: An alternative method to turn the TV on for alexa Routine
+  sequence:
+  - data:
+      entity_id: switch.living_room_tv
+    service: switch.turn_on
