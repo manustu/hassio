@@ -331,8 +331,7 @@
     to: 'off'
 - action:
   - data:
-      message: Oil Burner has been left on while no one is in the house. http://ramsay.duckdns.org:8123
-        <- Click here to open home assistant front end to switch off.
+      message: Oil Burner has been left on while no one is in the house.
       title: WARNING!
     service: notify.email
   alias: Oil Burner left on
